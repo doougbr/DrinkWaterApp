@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <PreferenceCategory android:title="Alerts">
+
+        <SwitchPreferenceCompat
+            android:defaultValue="true"
+            android:key="switch_preference"
+            android:title="Turn on alerts?" />
+
+        <ListPreference
+            android:key="text"
+            android:title="@string/title"
+            android:entries="@array/entries"
+            android:entryValues="@array/entries"
+            />
+
+    </PreferenceCategory>
+
+    <PreferenceCategory android:title="General">
+
+        <SwitchPreferenceCompat
+            android:defaultValue="false"
+            android:key="theme"
+            android:summary="Easy on the eyes and saves battery"
+            android:title="Dark theme on" />
+
+        <Preference
+            android:key="reset"
+            android:title="Reset Preferences" />
+    </PreferenceCategory>
+
+
+</PreferenceScreen>
